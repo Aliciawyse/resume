@@ -109,7 +109,7 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Refactr.tech</h3>
               <p>
-                A GatsbyJS version of the Refactr.tech website. As a result, I doubled performance of site, turned it into a Progressive Web App (PWA) and increased accessibility.
+                A GatsbyJS version of the Refactr.tech website. I doubled performance of site, turned it into a Progressive Web App (PWA) and increased accessibility.
               </p>
             </div>
           </div>
