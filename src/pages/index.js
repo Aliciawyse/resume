@@ -100,7 +100,7 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Ruby for Good: Babywearing</h3>
               <p>
-                A lending library built with Ruby on Rails, so that members can try different types of carriers and find what works best for their family. This open source project will help the Mid-Atlantic Babywearing organization save $600 in annual software costs.
+                A lending library built with Ruby on Rails, so that members can try different types of carriers and find what works best for their family. This open source project will help the Mid-Atlantic Babywearing organization save $600 in annual software costs. Check out <a href="https://github.com/rubyforgood/babywearing/pulls?q=is%3Apr+is%3Aclosed+author%3AAliciawyse" target="blank">my contributions</a>.
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Refactr.tech</h3>
               <p>
-                A GatsbyJS version of the Refactr.tech website. I doubled performance of site, turned it into a Progressive Web App (PWA) and increased accessibility.
+                A GatsbyJS version of the Refactr.tech website. I doubled performance of site, turned it into a Progressive Web App (PWA) and increased accessibility. Check out the <a href="https://github.com/Aliciawyse/refactr_web_app" target="blank">GitHub repository</a> for this project.
               </p>
             </div>
           </div>
