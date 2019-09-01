@@ -22,7 +22,7 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-            I'm a software engineer and WomenWhoCode Atlanta lead member.
+            I'm a support engineer at SalesLoft, where I've been for the last year. <br/>  <br/> After undergrad at the University of California Irvine, I spent a few years in the private banking and nonprofit space. Last year, I finished a coding bootcamp. <br/>  <br/> Outside of work, I'm a WomenWhoCode Atlanta Lead member, occasional blogger and conference speaker. I've also been contributing to open source Ruby projects to learn the language and its object oriented programming principals more deeply.
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
@@ -141,9 +141,6 @@ const IndexPage = () => (
           </ul>
         </div>
       </section>
-
-      <hr className="m-0" />
-
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="talks"
