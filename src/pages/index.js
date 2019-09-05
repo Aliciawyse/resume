@@ -128,6 +128,10 @@ const IndexPage = () => (
           <ul className="fa-ul mb-0">
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
+              <a href="https://medium.com/@OptimistAlicia/my-experience-with-rails-active-record-migrations-73cd1b383125" target="blank">My experience with Rails Active Record migrations</a>
+            </li>
+            <li>
+              <i className="fa-li fa fa-trophy text-warning"></i>
               <a href="https://medium.com/@OptimistAlicia/learning-about-the-fundamentals-of-good-code-e2c5488c4402" target="blank">Learning About the Fundamentals of Good Code</a>
             </li>
             <li>
