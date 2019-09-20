@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 import config from '../../config';
+import avatar from '../assets/images/avatar.png';
 
 export class Sidebar extends Component {
   constructor(props) {
@@ -9,8 +10,8 @@ export class Sidebar extends Component {
     this.state = {
       tabs: [
         { content: 'About', href: 'about' },
-        { content: 'Experience', href: 'experience' },
         { content: 'Projects', href: 'projects' },
+        { content: 'Experience', href: 'experience' },
         { content: 'Writing', href: 'writing' },
         { content: 'Talks', href: 'talks' },
         { content: 'Education', href: 'education' },
@@ -28,6 +29,13 @@ export class Sidebar extends Component {
         <a className="navbar-brand" href="#page-top">
           <span className="d-block d-lg-none">
             {config.firstName} {config.lastName}
+          </span>
+          <span className="d-none d-lg-block">
+            <img
+              className="img-fluid img-profile rounded-circle mx-auto mb-2"
+              src={avatar}
+              alt=""
+            />
           </span>
         </a>
         {/* <button

@@ -1,8 +1,5 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
-
-import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
 const IndexPage = () => (
@@ -28,11 +25,40 @@ const IndexPage = () => (
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url}>
+                <a key={url} href={url} target="_blank">
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <hr className="m-0" />
+
+      <section
+        className="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="projects"
+      >
+        <div className="w-100">
+          <h2 className="mb-5">Recent Projects</h2>
+
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div className="resume-content">
+              <h3 className="mb-0">Ruby for Good: Babywearing</h3>
+              <p>
+                A lending library built with Ruby on Rails, so that members can try different types of carriers and find what works best for their family. This open source project will help the Mid-Atlantic Babywearing organization save $600 in annual software costs. Check out <a href="https://github.com/rubyforgood/babywearing/pulls?q=is%3Apr+is%3Aclosed+author%3AAliciawyse" target="_blank">my contributions</a>.
+              </p>
+            </div>
+          </div>
+
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div className="resume-content">
+              <h3 className="mb-0">Refactr.tech</h3>
+              <p>
+                A GatsbyJS version of the Refactr.tech website. I doubled performance of site, turned it into a Progressive Web App (PWA) and increased accessibility. Check out the <a href="https://github.com/Aliciawyse/refactr_web_app" target="blank">GitHub repository</a> for this project. Also, watch my talk <a href="https://www.recallact.com/presentation/refactrtech-gatsbyjs" target="_blank">here</a>.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -90,36 +116,6 @@ const IndexPage = () => (
       <hr className="m-0" />
 
       <section
-        className="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="projects"
-      >
-        <div className="w-100">
-          <h2 className="mb-5">Recent Projects</h2>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Ruby for Good: Babywearing</h3>
-              <p>
-                A lending library built with Ruby on Rails, so that members can try different types of carriers and find what works best for their family. This open source project will help the Mid-Atlantic Babywearing organization save $600 in annual software costs. Check out <a href="https://github.com/rubyforgood/babywearing/pulls?q=is%3Apr+is%3Aclosed+author%3AAliciawyse" target="blank">my contributions</a>.
-              </p>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Refactr.tech</h3>
-              <p>
-                A GatsbyJS version of the Refactr.tech website. I doubled performance of site, turned it into a Progressive Web App (PWA) and increased accessibility. Check out the <a href="https://github.com/Aliciawyse/refactr_web_app" target="blank">GitHub repository</a> for this project.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <hr className="m-0" />
-
-      <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="writing"
       >
@@ -128,19 +124,23 @@ const IndexPage = () => (
           <ul className="fa-ul mb-0">
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              <a href="https://medium.com/@OptimistAlicia/my-experience-with-rails-active-record-migrations-73cd1b383125" target="blank">My experience with Rails Active Record migrations</a>
+              <a href="https://medium.com/@OptimistAlicia/kick-imposter-syndrome-in-the-butt-be8be1ad4303" target="_blank">Kick imposter syndrome in the butt</a>
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              <a href="https://medium.com/@OptimistAlicia/learning-about-the-fundamentals-of-good-code-e2c5488c4402" target="blank">Learning About the Fundamentals of Good Code</a>
+              <a href="https://medium.com/@OptimistAlicia/my-experience-with-rails-active-record-migrations-73cd1b383125" target="_blank">My experience with Rails Active Record migrations</a>
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              <a href="https://code.likeagirl.io/how-do-you-handle-diving-into-an-existing-codebase-6510b22b3c07" target="blank">How do you handle diving into an existing codebase?</a>
+              <a href="https://medium.com/@OptimistAlicia/learning-about-the-fundamentals-of-good-code-e2c5488c4402" target="_blank">Learning About the Fundamentals of Good Code</a>
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              <a href="https://medium.com/@OptimistAlicia/my-first-hackathon-4356ce8974f8" target="blank">My first hackathon</a>
+              <a href="https://code.likeagirl.io/how-do-you-handle-diving-into-an-existing-codebase-6510b22b3c07" target="_blank">How do you handle diving into an existing codebase?</a>
+            </li>
+            <li>
+              <i className="fa-li fa fa-trophy text-warning"></i>
+              <a href="https://medium.com/@OptimistAlicia/my-first-hackathon-4356ce8974f8" target="_blank">My first hackathon</a>
             </li>
           </ul>
         </div>
@@ -154,7 +154,7 @@ const IndexPage = () => (
           <ul className="fa-ul mb-0">
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              <a href="https://slides.com/aliciabarrett/gatsbyjs-refactr#/" target="blank">Rebuilding refactr.tech with GatsbyJS</a>
+              <a href="https://slides.com/aliciabarrett/gatsbyjs-refactr#/" target="_blank">Rebuilding refactr.tech with GatsbyJS</a>
             </li>
           </ul>
         </div>
