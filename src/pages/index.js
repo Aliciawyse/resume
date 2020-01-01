@@ -19,7 +19,13 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-            I'm a support engineer at SalesLoft, where I've been since July 2018. <br/>  <br/> After undergrad at the University of California Irvine, I spent a few years in the private banking and nonprofit space. Last year, I finished a coding bootcamp. <br/>  <br/> Outside of work, I'm a WomenWhoCode Atlanta Lead member, occasional blogger and conference speaker. I've also been contributing to open source Ruby projects to learn the language and its object oriented programming principles more deeply.
+            Hello! I'm a full stack software engineer who works remote for a company called Abstract.
+            <br />
+            <br />
+            Prior to Abstract, I worked at other fast-growing startups doing technical support.
+            <br />
+            <br />
+            Outside of work, I volunteer with WomenWhoCode Atlanta, occasionally write blog posts and speak at conferences. I also really enjoy contributing to open source projects with Ruby For Good.
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
@@ -74,14 +80,27 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Support Engineer</h3>
-              <div className="subheading mb-3">SalesLoft</div>
+              <h3 className="mb-0">Software Engineer</h3>
+              <div className="subheading mb-3">Abstract</div>
               <p>
-                I spend my days answering support tickets and building custom reports for our top customers. I also pair program with full stack engineers to fix bugs or add new behavior to the codebase.
+                In this new role, I primarily spend time fixing backlog bugs in Ruby on Rails and React source code.
               </p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">July 2018 - Present</span>
+              <span className="text-primary">December 2019 - Present</span>
+            </div>
+          </div>
+
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div className="resume-content">
+              <h3 className="mb-0">Support Engineer</h3>
+              <div className="subheading mb-3">SalesLoft</div>
+              <p>
+                I spent most days triaging support tickets and building custom reports for our top customers. I also pair program with full stack engineers to fix bugs or add new behavior to the codebase.
+              </p>
+            </div>
+            <div className="resume-date text-md-right">
+              <span className="text-primary">July 2018 - December 2019</span>
             </div>
           </div>
 
