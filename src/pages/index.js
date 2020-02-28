@@ -25,7 +25,7 @@ const IndexPage = () => (
             Prior to Abstract, I worked at other fast-growing startups doing technical support.
             <br />
             <br />
-            Outside of work, I volunteer with WomenWhoCode Atlanta, occasionally write blog posts and speak at conferences. I also really enjoy contributing to open source projects with Ruby For Good.
+            Outside of work, I'm a WomenWhoCode Atlanta volunteer, blog post writer, conference speaker and frequent open source contributor.
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
@@ -83,7 +83,7 @@ const IndexPage = () => (
               <h3 className="mb-0">Software Engineer</h3>
               <div className="subheading mb-3">Abstract</div>
               <p>
-                In this new role, I primarily spend time fixing backlog bugs in Ruby on Rails and React source code.
+                I regularly contribute to the React and Ruby on Rails codebases. I collaborate with teammates on code reviews. I've also authored new documentation on how API versioning works at the company.
               </p>
             </div>
             <div className="resume-date text-md-right">
